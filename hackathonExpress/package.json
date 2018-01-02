@@ -13,7 +13,8 @@
     "cors": "*",
     "nodemon": "*",
     "passport": "*",
-    "bcryptjs": "*"
+    "bcryptjs": "*",
+    "jsonwebtoken": "*"
   },
   "author": "",
   "license": "ISC"

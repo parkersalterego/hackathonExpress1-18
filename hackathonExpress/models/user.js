@@ -24,7 +24,15 @@ const userSchema = new mongoose.Schema({
 
 const User = module.exports = mongoose.model('User', userSchema);
 
-module.exports.getUsers = (callback) => {
-    User.find(callback);
-}
+module.exports.getUserById = (id, callback) => {
+    User.findById(id, callback);
+};
 
+module.exports.getUsername = (username, callback) => {
+    const query = {username: username}
+    User.findOne(query, callback);
+};
+
+module.exports.addUser = (newUser, callback) => {
+    //auth logic
+}
