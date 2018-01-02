@@ -7,4 +7,4 @@ const guestSchema = new mongoose.Schema({
     
 });
 
-const Guests = module.exports = mongoose.model('guests', guestSchema); 
+const Guest = module.exports = mongoose.model('Guest', guestSchema); 

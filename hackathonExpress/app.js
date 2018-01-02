@@ -24,9 +24,9 @@ mongoose.connection.on('error', (err) => {
 const app = express();
 
 // Bringing in our routes
-const havens = require('./routes/havens');
-const guests = require('./routes/guests');
-const users = require('./routes/users');
+const haven = require('./routes/havens');
+const guest = require('./routes/guests');
+const user = require('./routes/users');
 
 const port = 3000;
 
@@ -40,9 +40,9 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Using our routes
-app.use('/users', users);
-app.use('/guests', guests);
-app.use('/havens', havens);
+app.use('/users', user);
+app.use('/guests', guest);
+app.use('/havens', haven);
 
 
 
@@ -53,5 +53,5 @@ app.get('/', (req, res) => {
 
 // Starting the Server
 app.listen(port, () => {
-    console.log('Server started on port ' + port);
+    console.log('Server started on port ' + port); 
 });

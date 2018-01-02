@@ -4,7 +4,7 @@ const config = require('../config/database');
 // haven schema
 
 const havenSchema = new mongoose.Schema({
-    
+
 });
 
-const Havens = module.exports = mongoose.model('haven', havenSchema);
+const Haven = module.exports = mongoose.model('Haven', havenSchema);

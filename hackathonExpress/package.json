@@ -11,7 +11,9 @@
     "mongoose": "*",
     "body-parser": "*",
     "cors": "*",
-    "nodemon": "*"
+    "nodemon": "*",
+    "passport": "*",
+    "bcryptjs": "*"
   },
   "author": "",
   "license": "ISC"

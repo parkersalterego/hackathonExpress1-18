@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const config = require('../config/database');
-const Users = require('../models/users');
+const Users = require('../models/user');
 
 router.get('/', (req, res) => {
     if(err) {
