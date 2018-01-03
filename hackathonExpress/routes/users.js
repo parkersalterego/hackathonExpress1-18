@@ -15,7 +15,7 @@ router.post('/register', (req, res, next) => {
 
     User.addUser(newUser, (err, user) => {
         if(err) {
-            res.json({success: false, msg: 'failed tp register user'});
+            res.json({success: false, msg: 'failed to register user'});
         } else {
             res.json({success: true, msg: 'user registered'});
         }
@@ -23,7 +23,7 @@ router.post('/register', (req, res, next) => {
 });
 
 //Authenticate
-router.get('/authenticate', (req, res, next) => {
+router.post('/authenticate', (req, res, next) => {
     res.send('AUTHENTICATE USER');
 });
 

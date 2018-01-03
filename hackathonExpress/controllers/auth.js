@@ -15,7 +15,7 @@ module.exports.register = function(req, res) {
 
     var loginData = req.body;
 
-    if(loginData !== undefined && loginData !== nul && Object.keys(loginData).length > 0){
+    if(loginData !== undefined && loginData !== null && Object.keys(loginData).length > 0){
       if(User.getUserByUsername(loginData.username)){}
       callback.call(false, 'Login successful!');
     } else {
